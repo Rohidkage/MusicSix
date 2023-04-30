@@ -1,13 +1,13 @@
 {
-    "name": "OtanCabul ",
+    "name": "MusicSix ",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/84406e4ebefbab4aad1a1.jpg",
+    "logo": "https://telegra.ph/file/e30ecfcc95f4e74bbce5e.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
     "XYukki",
-    "Otanacabul",
+    "MusicSix",
     "telegram-bot",
     "pyrogram"
     ],
@@ -45,7 +45,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5658910455",
+        "value": "1557184285",
         "required": true
       },
       "STRING_SESSION": {
@@ -70,7 +70,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/OTANCABUL/OtanCabul",
+        "value": "https://github.com/Rohidkage/MusicSix",
         "required": true
       },
       "UPSTREAM_BRANCH": {
