@@ -83,7 +83,7 @@ def subcribe(func):
 
                         reply_markup=InlineKeyboardMarkup(
 
-                            [[InlineKeyboardButton("🌚Masok Buru", url=link)]]
+                            [[InlineKeyboardButton("🗿 Masok Buru", url=link)]]
 
                         ),
 
