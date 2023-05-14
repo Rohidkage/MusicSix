@@ -69,9 +69,9 @@ def subcribe(func):
 
                 else:
 
-                    chat_info = await app.get_chat(JOIN)
+                    link = await app.get_chat(JOIN)
 
-                    chat_info.invite_link
+                    link.invite_link
 
                 try:
 
