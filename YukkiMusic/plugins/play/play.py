@@ -59,10 +59,10 @@ def subcribe(func):
                    # link.invite_link
                 try:
                     await message.reply(
-                        f"**ʏᴏ {rpk}. ᴊᴏɪɴ ᴅʟᴜ ᴋᴇ ᴄʜ ɢᴜᴀ ʙᴀʀᴜ ʙɪsᴀ ᴋᴀʟɪᴀɴ ᴅᴇᴍᴜs ᴀᴛᴀᴜ ᴍᴀʜ ɴɢᴇʙᴏᴋᴇᴘ @kagestore69**",
+                        f"**ᴡᴏɪ ᴘᴏᴋᴇ {rpk}. ᴊᴏɪɴ ᴅᴜʟᴜ ᴋᴇ ᴄʜ ɢᴜᴀ ʙᴀʀᴜ ʙɪsᴀ ᴋᴀʟɪᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴀᴛᴀᴜ ᴘʟᴀʏ ʙᴏᴋᴇᴘ @kagestore69**",
                         disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
-                            [[InlineKeyboardButton("🗿 Masok Buru", url=link)]]
+                            [[InlineKeyboardButton("🐣 MASUK SINI SAYANG 🐣", url=link)]]
                         ),
                     )
                     await message.stop_propagation()
