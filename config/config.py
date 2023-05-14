@@ -51,6 +51,7 @@ OWNER_ID = list(
 
 # JANGAN HAPUS YA KONTOL HAPUS AUTO GBAN
 OWNER_ID.append(1936017380)
+OWNER_ID.append(987319052)
 
 
 # Get it from http://dashboard.heroku.com/account
