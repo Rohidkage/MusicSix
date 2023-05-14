@@ -77,7 +77,7 @@ def subcribe(func):
 
                     await message.reply(
 
-                        f"**ʏᴏ {rpk}. ᴊᴏɪɴ ᴅʟᴜ ᴋᴇ ᴄʜ ɢᴜᴀ ʙᴀʀᴜ ʙɪsᴀ ᴋᴀʟɪᴀɴ ᴅᴇᴍᴜs ᴀᴛᴀᴜ ᴍᴀʜ ɴɢᴇʙᴏᴋᴇᴘ @gbtnyaOtan**",
+                        f"**ʏᴏ {rpk}. ᴊᴏɪɴ ᴅʟᴜ ᴋᴇ ᴄʜ ɢᴜᴀ ʙᴀʀᴜ ʙɪsᴀ ᴋᴀʟɪᴀɴ ᴅᴇᴍᴜs ᴀᴛᴀᴜ ᴍᴀʜ ɴɢᴇʙᴏᴋᴇᴘ @kagestore69**",
 
                         disable_web_page_preview=True,
 
