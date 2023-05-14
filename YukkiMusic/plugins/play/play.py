@@ -13,12 +13,12 @@ from ast import ExceptHandler
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram.errors import ChatAdminRequired, ChatWriteForbidden, UserNotParticipant
 from pyrogram import filters
-from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto,
-                            Message)
+from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
+
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from config import BANNED_USERS, lyrical
+from config import BANNED_USERS, lyrical, JOIN
 from strings import get_command
 from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
@@ -35,76 +35,44 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
-from config import JOIN
+
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
 def subcribe(func):
-
     async def wrapper(_, message: Message):
-
         user_id = message.from_user.id
-
         user_name = message.from_user.first_name
-
         rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
-
         if not JOIN:  # Not compulsory
-
             return
-
         try:
-
             try:
-
                 await app.get_chat_member(JOIN, message.from_user.id)
-
             except UserNotParticipant:
-
                 if JOIN.isalpha():
-
                     link = "https://t.me/" + JOIN
-
                 else:
-
-                    link = await app.get_chat(JOIN)
-
-                    link.invite_link
-
+                    link = await app.export_chat_invite_link(JOIN)
+                   # link.invite_link
                 try:
-
                     await message.reply(
-
                         f"**ʏᴏ {rpk}. ᴊᴏɪɴ ᴅʟᴜ ᴋᴇ ᴄʜ ɢᴜᴀ ʙᴀʀᴜ ʙɪsᴀ ᴋᴀʟɪᴀɴ ᴅᴇᴍᴜs ᴀᴛᴀᴜ ᴍᴀʜ ɴɢᴇʙᴏᴋᴇᴘ @kagestore69**",
-
                         disable_web_page_preview=True,
-
                         reply_markup=InlineKeyboardMarkup(
-
                             [[InlineKeyboardButton("🗿 Masok Buru", url=link)]]
-
                         ),
-
                     )
-
                     await message.stop_propagation()
-
                 except ChatWriteForbidden:
-
                     pass
-
         except ChatAdminRequired:
-
             await message.reply(
-
                 f"Saya bukan admin di chat : {JOIN} !"
-
             )
-
         return await func(_, message)
-
     return wrapper
 
 
