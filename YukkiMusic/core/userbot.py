@@ -57,7 +57,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("userbotkage")
+                await self.one.join_chat("suportkage")
                 await self.one.join_chat("kagestore69")
             except:
                 pass
@@ -87,7 +87,7 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("userbotkage")
+                await self.two.join_chat("suportkage")
                 await self.two.join_chat("kagestore69")
             except:
                 pass
@@ -117,7 +117,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("userbotkage")
+                await self.three.join_chat("suportkage")
                 await self.three.join_chat("kagestore69")
             except:
                 pass
@@ -147,7 +147,7 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("userbotkage")
+                await self.four.join_chat("suportkage")
                 await self.four.join_chat("kagestore69")
             except:
                 pass
@@ -177,7 +177,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("userbotkage")
+                await self.five.join_chat("suportkage")
                 await self.five.join_chat("kagestore69")
             except:
                 pass
